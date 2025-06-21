@@ -12,40 +12,43 @@
     <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
     <link rel="stylesheet" href="static/css/prism.css">
     <link rel="stylesheet" href="static/css/nord.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+
 </head>
 
 <body class="container">
     <h1>DocDocGo 🦆</h1>
-    <form id="search-form" hx-get="/search" hx-target="#search-results" hx-swap="innerHTML">
-        <fieldset class="form-row">
-            <label>
-                Search string:
-                <input type="text" name="query" placeholder="Search something..." />
-            </label>
-            <label>
-                Number of hits:
-                <input type="number" name="hits" value=5>
-            </label>
-            <label>
-                Library:
-                <select name="library">
-                    {% for library in libraries %}
-                    <option>{{ library }}</option>
-                    {% endfor %}
-                </select>
-            </label>
-            <button type="submit">Search</button>
-        </fieldset>
+    <form id="search-form" hx-get="/search" hx-target="#search-results" hx-swap="innerHTML" class="form-row">
+        <label>
+            Search string:
+            <input type="text" name="query" placeholder="Search something..." />
+        </label>
+        <label>
+            Number of hits:
+            <input type="number" name="hits" value=5>
+        </label>
+        <label>
+            Library:
+            <select name="library">
+                {% for library in libraries %}
+                <option>{{ library }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <button type="submit">🔎 Search</button>
     </form>
 
     <h2>Results</h2>
     <div id="search-results">
         <p>Nothing to see here...</p>
     </div>
+    <div id="the-duck-house">
+    </div>
     <script src="static/js/prism.js"></script>
+    <script src="static/js/ducks.js"></script>
     <script>
         document.body.addEventListener('htmx:afterSwap', (e) => {
-
+            docdocgo();
             if (window.Prism) {
                 Prism.highlightAll();
             }

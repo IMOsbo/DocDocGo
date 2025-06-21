@@ -69,4 +69,4 @@ def root():
     return render_template("search.html", libraries=libraries)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

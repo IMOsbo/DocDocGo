@@ -53,16 +53,3 @@
     --dark-backdrop: #2e3440;
     /* Nord0: Base polar night, for backdrops */
 }
-
-.form-row {
-    display: flex;
-}
-
-.form-row>* {
-    /* Targets all direct children of .form-row */
-    flex-basis: 0;
-    /* Or flex-basis: auto; in some cases */
-    flex-grow: 1;
-    /* Allows items to grow and take up available space equally */
-    /* flex: 1; is a shorthand for flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
-}

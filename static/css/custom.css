@@ -1,0 +1,48 @@
+.form-row {
+    display: flex;
+    gap: 2rem;
+
+    margin: 1.5rem 0;
+    /* Add vertical spacing around the whole group */
+}
+
+select,
+input[type="text"],
+input[type="number"],
+button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+
+    background-color: var(--dark-bg-default);
+    color: var(--dark-default);
+    font-weight: bold;
+    border: none;
+    box-shadow: 6px 6px 0 #000;
+    /* the chunky offset */
+    position: relative;
+}
+
+
+.form-row>* {
+    /* Targets all direct children of .form-row */
+    flex-basis: 0;
+    /* Or flex-basis: auto; in some cases */
+    flex-grow: 1;
+    /* Allows items to grow and take up available space equally */
+    /* flex: 1; is a shorthand for flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#the-duck-house {
+    padding-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+}
