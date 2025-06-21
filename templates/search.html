@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Search</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4"
+        integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+        crossorigin="anonymous"></script>
+    <!-- Minified version -->
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <link rel="stylesheet" href="static/css/prism.css">
+    <link rel="stylesheet" href="static/css/nord.css">
+</head>
+
+<body class="container">
+    <h1>DocDocGo 🦆</h1>
+    <form id="search-form" hx-get="/search" hx-target="#search-results" hx-swap="innerHTML">
+        <fieldset class="form-row">
+            <label>
+                Search string:
+                <input type="text" name="query" placeholder="Search something..." />
+            </label>
+            <label>
+                Number of hits:
+                <input type="number" name="hits" value=5>
+            </label>
+            <label>
+                Library:
+                <select name="library">
+                    {% for library in libraries %}
+                    <option>{{ library }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+            <button type="submit">Search</button>
+        </fieldset>
+    </form>
+
+    <h2>Results</h2>
+    <div id="search-results">
+        <p>Nothing to see here...</p>
+    </div>
+    <script src="static/js/prism.js"></script>
+    <script>
+        document.body.addEventListener('htmx:afterSwap', (e) => {
+
+            if (window.Prism) {
+                Prism.highlightAll();
+            }
+        });
+    </script>
+</body>
+
+</html>

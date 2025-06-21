@@ -1,0 +1,5 @@
+docs/
+*.db
+*.npy
+*.ipynb
+__pycache__/

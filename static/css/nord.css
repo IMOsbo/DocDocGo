@@ -1,0 +1,68 @@
+:root {
+    /* Text Colors */
+    --dark-default: #d8dee9;
+    /* Nord4: Main color for text, variables, constants and attributes */
+    --dark-subtle: #e5e9f0;
+    /* Nord5: Lighter shade, good for subtle text */
+    --dark-contrast: #2e3440;
+    /* Nord0: Base polar night, good for high contrast text */
+    --dark-muted: #4c566a;
+    /* Nord3: For comments, invisibles, or muted text */
+    --dark-accent: #88c0d0;
+    /* Nord8: Accent color, suitable for primary UI elements and methods */
+    --dark-active: #b48ead;
+    /* Nord15: Numbers, can be used for active states */
+    --dark-variant: #d08770;
+    /* Nord12: Annotations, or a variant color */
+    --dark-success: #a3be8c;
+    /* Nord14: Git/diff additions and success visualizations */
+    --dark-attention: #ebcb8b;
+    /* Nord13: Warnings and git/diff renamings */
+    --dark-severe: #bf616a;
+    /* Nord11: Errors, git/diff deletion and linter marker, suitable for severe */
+    --dark-danger: #bf616a;
+    /* Nord11: Errors, git/diff deletion and linter marker */
+
+    /* Backgrounds */
+    --dark-bg-default: #3b4252;
+    /* Nord0: Base polar night, suitable for default background */
+    --dark-bg-subtle: #2e3440;
+    /* Nord1: Lighter shade of polar night, for subtle backgrounds */
+    --dark-bg-contrast: #d8dee9;
+    /* Nord4: Snow storm base, for contrasting backgrounds */
+    --dark-bg-muted: #434c5e;
+    /* Nord2: Line highlighting or selection color, good for muted backgrounds */
+    --dark-bg-accent: #5e81ac;
+    /* Nord10: Bluish core color, can be used for accent backgrounds */
+    --dark-bg-active: #81a1c1;
+    /* Nord9: Bluish core color, for active backgrounds */
+    --dark-bg-variant: #8fbcbb;
+    /* Nord7: Bluish core color, for variant backgrounds */
+    --dark-bg-success: #a3be8c;
+    /* Nord14: Git/diff additions and success visualizations, for success backgrounds */
+    --dark-bg-attention: #ebcb8b;
+    /* Nord13: Warnings, for attention backgrounds */
+    --dark-bg-severe: #d08770;
+    /* Nord12: Annotations, good for severe backgrounds */
+    --dark-bg-danger: #bf616a;
+    /* Nord11: Errors, for danger backgrounds */
+
+    /* Miscellaneous */
+    --dark-bd-muted: #4c566a;
+    /* Nord3: For comments or muted borders */
+    --dark-backdrop: #2e3440;
+    /* Nord0: Base polar night, for backdrops */
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row>* {
+    /* Targets all direct children of .form-row */
+    flex-basis: 0;
+    /* Or flex-basis: auto; in some cases */
+    flex-grow: 1;
+    /* Allows items to grow and take up available space equally */
+    /* flex: 1; is a shorthand for flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+}
