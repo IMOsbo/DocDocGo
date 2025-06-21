@@ -57,3 +57,4 @@ I purposefully made this as minimal as possible - no massive dependencies here.
 - Document storage: [sqlite](https://sqlite.org/)
 - Server handling: [Flask](https://flask.palletsprojects.com/)
 - Front end: [matcha.css](https://github.com/lowlighter/matcha) and [htmx](https://htmx.org/)
+- Theming: [prism.js](https://prismjs.com/) and [nord](https://www.nordtheme.com/)
