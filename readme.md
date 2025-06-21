@@ -1,5 +1,7 @@
 # DocDocGo 🦆 - 'documentation for out there'
 
+![image](https://github.com/user-attachments/assets/4c7c7626-68bf-4ef4-b034-10b626dc20f7)
+
 We've all been there. Trying to push through the final stretches of a project - and then the internet goes out. Your fancy Google searches? StackOverflow? (ChatGPT?) All gone.
 
 You *can* download `zip` folders of docs from your favorite libraries, but searching those websites are... often lacking. To fix this, I leveraged Context7's wonderfully structured docs - see an example here.
@@ -33,6 +35,9 @@ pip install requirements.txt
 ```
 
 Once you've installed everything, add the docs you want to include to `.docs`. See the example `.docs` file for examples. 
+
+![image](https://github.com/user-attachments/assets/3f2e13b7-fff5-4a64-9cf7-9dab001c8b23)
+
 
 ```
 python processDB.py
