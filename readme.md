@@ -25,7 +25,7 @@ df
 \`\`\`
 ```
 
-Context7 is clearly structured and meant for LLMs, but it also works pretty well for human documentation too...<https://context7.com/about> The clear structure makes it a great fit for embeddings search...
+Context7 is clearly structured and meant for LLMs, but it also works pretty well for human documentation too...<https://context7.com/about> The clear structure makes it a great fit for embeddings search... DocDocGo takes a query, compares it to the titles of all the example code snippets in its database, then returns the top **n** snippets based on those embeddings. Simple? Yes. Effective? Suprisingly yes.
 
 ## Installation
 
